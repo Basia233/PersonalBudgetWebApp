@@ -17,8 +17,8 @@ h1
 	color: #2F3336;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	margin-top: 50px;
-	margin-bottom: 40px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -44,11 +44,6 @@ h2
 	line-height: 300%;
 }
 
-button 
-{
-	margin-left: 100px;
-}
-
 
 .registration
 {
@@ -58,6 +53,7 @@ button
 	color: white;
 	padding: 15px 10px;
 	margin-top: 20px;
+	margin-left: 100px;
 	border: none;
 	border-radius: 20px;
 	cursor: pointer;
@@ -79,6 +75,7 @@ button
 	color: white;
 	padding: 15px 10px;
 	margin-top: 20px;
+	margin-left: 100px;
 	border: none;
 	border-radius: 20px;
 	cursor: pointer;
@@ -91,7 +88,6 @@ button
 {
 	background-color: #339900;
 }
-
 
 .container
 {
@@ -211,6 +207,90 @@ input[type=submit]:hover
 	bottom: 0;
 	clear: both;
 }
+
+
+input[type=number],
+input[type=date],
+textarea,
+select
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 7px;
+	box-sizing: border-box; /*box sizing taki sam jak w przypadku przycisku Zaloguj, bo inaczej te pola z loginem i hasłem są szerze od przycisku Zaloguj */
+	outline: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	color: #2F3336;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	font-size: 16px;
+}
+
+.button
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+.add
+{
+	width: 145px;
+	background-color: #339900;
+	font-size: 16px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	display: inline-block;
+}
+
+.add:hover
+{
+	background-color: #006600;
+}
+
+
+.cancel
+{
+	width: 145px;
+	background-color: #CC0000;
+	font-size: 16px;
+	color: white;
+	margin-top: 20px;
+	margin-left: 5px;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	display: inline-block;
+	
+}
+
+.cancel:hover
+{
+	background-color: #990000;
+}
+
 
 
 
