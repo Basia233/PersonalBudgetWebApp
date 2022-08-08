@@ -62,10 +62,12 @@ h2
 	display: inline-block;
 }
 
+
 .registration:hover
 {
 	background-color: #CC0000;
 }
+
 
 .login
 {
@@ -84,10 +86,12 @@ h2
 	display: inline-block;
 }
 
+
 .login:hover
 {
 	background-color: #339900;
 }
+
 
 .container
 {
@@ -183,10 +187,12 @@ input[type=submit]:hover
 	border-right: 1px dashed #FFCC66;
 }
 
+
 .menu > li:first-child
 {
 	border-left: 1px dashed #FFCC66;
 }
+
 
 .menu a:hover
 {
@@ -228,6 +234,7 @@ select
 	margin-right: auto;
 }
 
+
 .row
 {
 	margin-left: auto;
@@ -239,6 +246,7 @@ select
 	font-size: 16px;
 }
 
+
 .button
 {
 	margin-left: auto;
@@ -246,13 +254,14 @@ select
 	width: 300px;
 }
 
+
 .add
 {
 	width: 145px;
 	background-color: #339900;
 	font-size: 16px;
 	color: white;
-	padding: 10px 10px;
+	padding: 12px 10px;
 	margin-top: 20px;
 	border: none;
 	border-radius: 20px;
@@ -276,14 +285,13 @@ select
 	color: white;
 	margin-top: 20px;
 	margin-left: 5px;
-	padding: 10px 10px;
+	padding: 12px 10px;
 	border: none;
 	border-radius: 20px;
 	cursor: pointer;
 	letter-spacing: 2px;
 	outline: none;
 	display: inline-block;
-	
 }
 
 .cancel:hover
