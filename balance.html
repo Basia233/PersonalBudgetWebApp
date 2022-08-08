@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Przeglądaj bilans</title>
+	<meta name="description" content="Aplikacja webowa do zarządzania budżetem osobistym - przychodami oraz wydatkami. Bilans wydatków oraz przychodów." />
+	<meta name="keywords" content="budżet osobisty, oszczędzanie, wydatki, przychody, bilans, aplikacja webowa, zarządzaj budżetem, bilans, przeglądaj bilans"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="main.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel = "stylesheet" href="css/fontello.css" type="text/css" />
+
+</head>
+
+
+<body>
+
+	<header>
+		<h1>Budżet Osobisty</h1>	
+	</header>
+	
+		<article>
+			
+			<div class="balance"> 
+			
+				<div class="balanceOption"> 
+					<label for="period"> Bilans dla okresu: </label>
+						<select id="period" name="period" required>
+							<option value="1" selected> bieżący miesiąc</option>
+							<option value="2"> poprzedni miesiąc</option>
+							<option value="3"> bieżący rok</option>
+							<option value="4"> wybrany przedział czasowy</option>
+						</select>
+						
+					<div class="datesFromTo">
+						<label>  Data od: <input type="date" name="Date1" ></label>
+						<label>  Data do: <input type="date" name="Date2" ></label>	
+					</div>
+				</div>
+		
+				
+				<div class="incomes"> 
+					<div class="incomes">
+						<table>
+							<th> </th>
+							<tr>
+								<td>Przychody</td>
+								<td>Kwota [zł]</td>
+							</tr>
+							<tr>
+								<td>Wynagrodzenie</td>
+								<td>3500,00</td>
+							</tr>
+							<tr>
+								<td>Odsetki bankowe</td>
+								<td>30,67</td>
+							</tr>
+							<tr>
+								<td>Sprzedaż na Allegro</td>
+								<td>123,45</td>
+							</tr>
+							<tr>
+								<td>Inne przychody</td>
+								<td>150,00</td>
+							</tr>
+							<tr>
+								<td>Suma przychodów:</td>
+								<td>4000,00</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="expenses">
+					<table>
+							<th> </th>
+							<tr>
+								<td>Wydatki</td>
+								<td>Kwota [zł]</td>
+							</tr>
+							<tr>
+								<td>Jedzenie</td>
+								<td>1200,00</td>
+							</tr>
+							<tr>
+								<td>Mieszkanie</td>
+								<td>740,00</td>
+							</tr>
+							<tr>
+								<td>Opieka zdrowotna</td>
+								<td>130,00</td>
+							</tr>
+							<tr>
+								<td>Inne wydatki</td>
+								<td>59,90</td>
+							</tr>
+							<tr>
+								<td>Suma wydatków:</td>
+								<td>2750,00</td>
+							</tr>
+					</table>
+					
+				</div>
+				
+				
+				<div id ="summary">Podsumowanie: 1250,00 zł</div>
+				
+			</div>
+
+		</article>
+
+	
+		<footer>
+			<div id ="information">
+			Barbara Bednarczyk &copy;  2022
+			</div>
+		</footer>
+
+</body>
+</html>
