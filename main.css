@@ -247,6 +247,7 @@ select
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	resize: none;
 }
 
 input[type=number]:hover,
@@ -406,7 +407,4 @@ table td
 	color: #2F3336;
 	padding: 35px;
 }
-
-
-
 
