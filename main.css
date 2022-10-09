@@ -247,7 +247,7 @@ select
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	resize: none;
+	resize: none; /* resize: vertical; - możliwa zmiana rozmiaru tylko w pionie */
 }
 
 input[type=number]:hover,
