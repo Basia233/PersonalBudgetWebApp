@@ -92,12 +92,12 @@ h2
 	background-color: #339900;
 }
 
-
+/*
 .container
 {
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 
 input[type=text],
@@ -261,9 +261,11 @@ select:hover
 
 .row
 {
+	/*
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
+	width: 300px;*/
+	
 	color: #2F3336;
 	margin-top: 10px;
 	margin-bottom: 2px;
@@ -399,9 +401,6 @@ table td
 
 #textMenu
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 900px;
 	text-align: justify;
 	background-color: #fff;
 	color: #2F3336;

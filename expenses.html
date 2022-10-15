@@ -25,68 +25,73 @@
 	<main>
 		
 		<section>
-			<header>
-				<h1>Budżet Osobisty</h1>	
-			</header>
-	
-			
-			<form>
-			
-				<div class = "row">
-					<label> Kwota <input type = "number" name="amount" step="0.01"> </label>
-				</div>
-				
-				<div class = "row">
-					<label> Data <input type = "date" name="date"></label>	
-				</div>
-				
-				<div class = "row">
-					<label for = "payment"> Sposób płatności </label>
-				
-					<select id = "payment" name = "payment">	
-						<option value = "cash" > Gotówka </option>
-						<option value ="credit"> Karta kredytowa </option>
-						<option value = "debit" selected> Karta debetowa </option>
-					</select>
-				</div>
-
-				<div class = "row">
-					<label for = "category"> Kategoria </label>
-				
-					<select id = "category" name = "category">	
-						<option value = "food" selected> Jedzenie </option>
-						<option value ="flat"> Mieszkanie </option>
-						<option value = "transport"> Transport </option>
-						<option value = "tel"> Telekomunikacja </option>
-						<option value = "health"> Opieka zdrowotna </option>
-						<option value = "clothes"> Ubranie </option>
-						<option value = "hygiene"> Higiena </option>
-						<option value = "kids"> Dzieci </option>
-						<option value = "entertirement"> Rozrywka </option>
-						<option value = "trip"> Wycieczka </option>
-						<option value = "trainings"> Szkolenia </option>
-						<option value = "books"> Książki </option>
-						<option value = "saving"> Oszczędności </option>
-						<option value = "retirement"> Emerytura </option>
-						<option value = "debt"> Spłata długów </option>
-						<option value = "gift"> Darowizna </option>
-						<option value = "others"> Inne wydatki</option>
-					</select>
-				</div>
+		
+		<div class = "container">
+		
+				<header>
+					<h1>Budżet Osobisty</h1>	
+				</header>
 		
 				
-				<div class = "row">
-					<label> Komentarz 
-					<textarea name="comment" placeholder="Opis (opcjonalnie)" onfocus ="this.placeholder=''" onblur = "this.placeholder = 'Opis (opcjonalnie)'" cols = "40" rows="2"></textarea>
-					</label>
-				</div>
+				<form>
+				
+					<div class = "row">
+						<label> Kwota <input type = "number" name="amount" step="0.01"> </label>
+					</div>
+					
+					<div class = "row">
+						<label> Data <input type = "date" name="date"></label>	
+					</div>
+					
+					<div class = "row">
+						<label for = "payment"> Sposób płatności </label>
+					
+						<select id = "payment" name = "payment">	
+							<option value = "cash" > Gotówka </option>
+							<option value ="credit"> Karta kredytowa </option>
+							<option value = "debit" selected> Karta debetowa </option>
+						</select>
+					</div>
+
+					<div class = "row">
+						<label for = "category"> Kategoria </label>
+					
+						<select id = "category" name = "category">	
+							<option value = "food" selected> Jedzenie </option>
+							<option value ="flat"> Mieszkanie </option>
+							<option value = "transport"> Transport </option>
+							<option value = "tel"> Telekomunikacja </option>
+							<option value = "health"> Opieka zdrowotna </option>
+							<option value = "clothes"> Ubranie </option>
+							<option value = "hygiene"> Higiena </option>
+							<option value = "kids"> Dzieci </option>
+							<option value = "entertirement"> Rozrywka </option>
+							<option value = "trip"> Wycieczka </option>
+							<option value = "trainings"> Szkolenia </option>
+							<option value = "books"> Książki </option>
+							<option value = "saving"> Oszczędności </option>
+							<option value = "retirement"> Emerytura </option>
+							<option value = "debt"> Spłata długów </option>
+							<option value = "gift"> Darowizna </option>
+							<option value = "others"> Inne wydatki</option>
+						</select>
+					</div>
 			
-				<div class = "button">
-					<button type = "submit" class= "add"> Dodaj </button>
-					<button type = "reset" class= "cancel"> Anuluj </button>
-				</div>
-			
-			</form>
+					
+					<div class = "row">
+						<label> Komentarz 
+						<textarea name="comment" placeholder="Opis (opcjonalnie)" onfocus ="this.placeholder=''" onblur = "this.placeholder = 'Opis (opcjonalnie)'" cols = "40" rows="2"></textarea>
+						</label>
+					</div>
+				
+					<div class = "button">
+						<button type = "submit" class= "add"> Dodaj </button>
+						<button type = "reset" class= "cancel"> Anuluj </button>
+					</div>
+				
+				</form>
+				
+			</div>
 			
 		</section>
 		
