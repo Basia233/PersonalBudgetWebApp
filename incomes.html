@@ -32,42 +32,49 @@
 					<h1>Budżet Osobisty</h1>	
 				</header>
 		
+				<div class="row">
 				
-				<form>
+					<div class = "col-sm-4">
 				
-					<div class = "row">
-						<label> Kwota <input type = "number" name="amount" step="0.01"></label>
+						<form>
+						
+							<div class = "form">
+								<label> Kwota <input type = "number" name="amount" step="0.01"></label>
+								
+							</div>
+							
+							<div class = "form">
+								<label> Data <input type = "date" name="date"></label>
+							</div>
+
+							<div class = "form">
+								<label for = "category"> Kategoria </label>
+							
+								<select id = "category" name = "category">	
+									<option value = "salary" selected> Wynagrodzenie </option>
+									<option value ="interest"> Odsetki bankowe </option>
+									<option value = "allegro"> Sprzedaż na Allegro </option>
+									<option value = "others"> Inne </option>
+								</select>
+							</div>
+							
+							<div class = "form">
+								<label> Komentarz 
+								<textarea name="comment" placeholder="Opis (opcjonalnie)" onfocus ="this.placeholder=''" onblur = "this.placeholder = 'Opis (opcjonalnie)'" cols = "40" rows="2"></textarea>
+								</label>
+							</div>
+						
+							<div class = "button">
+								<button type = "submit" class= "add"> Dodaj </button>
+								<button type = "reset" class= "cancel"> Anuluj </button>
+							</div>
+						
+						</form>
 						
 					</div>
+						
+				</div>
 					
-					<div class = "row">
-						<label> Data <input type = "date" name="date"></label>
-					</div>
-
-					<div class = "row">
-						<label for = "category"> Kategoria </label>
-					
-						<select id = "category" name = "category">	
-							<option value = "salary" selected> Wynagrodzenie </option>
-							<option value ="interest"> Odsetki bankowe </option>
-							<option value = "allegro"> Sprzedaż na Allegro </option>
-							<option value = "others"> Inne </option>
-						</select>
-					</div>
-					
-					<div class = "row">
-						<label> Komentarz 
-						<textarea name="comment" placeholder="Opis (opcjonalnie)" onfocus ="this.placeholder=''" onblur = "this.placeholder = 'Opis (opcjonalnie)'" cols = "40" rows="2"></textarea>
-						</label>
-					</div>
-				
-					<div class = "button">
-						<button type = "submit" class= "add"> Dodaj </button>
-						<button type = "reset" class= "cancel"> Anuluj </button>
-					</div>
-				
-				</form>
-				
 			</div>
 			
 		</section>

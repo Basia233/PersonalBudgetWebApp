@@ -259,7 +259,7 @@ select:hover
 }
 
 
-.row
+.form
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -271,13 +271,6 @@ select:hover
 	font-weight: 600;
 }
 
-/*
-#category
-{
-	margin-left: auto;
-	margin-left: 12px;
-}
-*/
 
 .button
 {

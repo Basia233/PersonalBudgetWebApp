@@ -32,88 +32,95 @@
 						<h1>Budżet Osobisty</h1>	
 					</header>
 					
+					<div class="row">
 					
-					<div class="balance"> 
+						<div class = "col-sm-4">
 					
-						<div class="balanceOption"> 
-							<label for="period"> Bilans dla okresu: </label>
-								<select id="period" name="period">
-									<option value="01" selected> bieżący miesiąc</option>
-									<option value="02"> poprzedni miesiąc</option>
-									<option value="03"> bieżący rok</option>
-									<option value="04"> wybrany przedział czasowy</option>
-								</select>
+							<div class="balance"> 
+							
+								<div class="balanceOption"> 
+									<label for="period"> Bilans dla okresu: </label>
+										<select id="period" name="period">
+											<option value="01" selected> bieżący miesiąc</option>
+											<option value="02"> poprzedni miesiąc</option>
+											<option value="03"> bieżący rok</option>
+											<option value="04"> wybrany przedział czasowy</option>
+										</select>
+										
+									<div class="datesFromTo">
+										<label>  Data od: <input type="date" name="Date1" ></label>
+										<label>  Data do: <input type="date" name="Date2" ></label>	
+									</div>
+								</div>
+						
 								
-							<div class="datesFromTo">
-								<label>  Data od: <input type="date" name="Date1" ></label>
-								<label>  Data do: <input type="date" name="Date2" ></label>	
-							</div>
-						</div>
-				
-						
-						<div class="incomes"> 
-							<table>
-								<tr>
-									<td class ="tableHeader">Przychody</td>
-									<td class ="tableHeader">Kwota [zł]</td>
-								</tr>
-								<tr>
-									<td>Wynagrodzenie</td>
-									<td>3500,00</td>
-								</tr>
-								<tr>
-									<td>Odsetki bankowe</td>
-									<td>30,67</td>
-								</tr>
-								<tr>
-									<td>Sprzedaż na Allegro</td>
-									<td>123,45</td>
-								</tr>
-								<tr>
-									<td>Inne przychody</td>
-									<td>150,00</td>
-								</tr>
-								<tr>
-									<td class = "tableHeader">Suma przychodów:</td>
-									<td>4000,00</td>
-								</tr>
-							</table>
-							
-						</div>
+								<div class="incomes"> 
+									<table>
+										<tr>
+											<td class ="tableHeader">Przychody</td>
+											<td class ="tableHeader">Kwota [zł]</td>
+										</tr>
+										<tr>
+											<td>Wynagrodzenie</td>
+											<td>3500,00</td>
+										</tr>
+										<tr>
+											<td>Odsetki bankowe</td>
+											<td>30,67</td>
+										</tr>
+										<tr>
+											<td>Sprzedaż na Allegro</td>
+											<td>123,45</td>
+										</tr>
+										<tr>
+											<td>Inne przychody</td>
+											<td>150,00</td>
+										</tr>
+										<tr>
+											<td class = "tableHeader">Suma przychodów:</td>
+											<td>4000,00</td>
+										</tr>
+									</table>
+									
+								</div>
 
-						<div class="expenses">
-							<table>
-									<tr>
-										<td class ="tableHeader">Wydatki</td>
-										<td class ="tableHeader">Kwota [zł]</td>
-									</tr>
-									<tr>
-										<td>Jedzenie</td>
-										<td>1200,00</td>
-									</tr>
-									<tr>
-										<td>Mieszkanie</td>
-										<td>740,00</td>
-									</tr>
-									<tr>
-										<td>Opieka zdrowotna</td>
-										<td>130,00</td>
-									</tr>
-									<tr>
-										<td>Inne wydatki</td>
-										<td>59,90</td>
-									</tr>
-									<tr>
-										<td class= "tableHeader">Suma wydatków:</td>
-										<td>2750,00</td>
-									</tr>
-							</table>
+								<div class="expenses">
+									<table>
+											<tr>
+												<td class ="tableHeader">Wydatki</td>
+												<td class ="tableHeader">Kwota [zł]</td>
+											</tr>
+											<tr>
+												<td>Jedzenie</td>
+												<td>1200,00</td>
+											</tr>
+											<tr>
+												<td>Mieszkanie</td>
+												<td>740,00</td>
+											</tr>
+											<tr>
+												<td>Opieka zdrowotna</td>
+												<td>130,00</td>
+											</tr>
+											<tr>
+												<td>Inne wydatki</td>
+												<td>59,90</td>
+											</tr>
+											<tr>
+												<td class= "tableHeader">Suma wydatków:</td>
+												<td>2750,00</td>
+											</tr>
+									</table>
+									
+								</div>
+								
+								
+								<div id ="summary">Podsumowanie: 1250,00 zł</div>
+								<div id ="text">Gratulacje. Świetnie zarządzasz finansami!</div>
+								
+							</div>
 							
 						</div>
-						
-						
-						<div id ="summary">Podsumowanie: 1250,00 zł</div>
-						<div id ="text">Gratulacje. Świetnie zarządzasz finansami!</div>
 						
 					</div>
 				
