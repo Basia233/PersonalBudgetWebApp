@@ -44,7 +44,6 @@ h2
 	line-height: 300%;
 }
 
-
 .registration
 {
 	width: 200px;
@@ -156,10 +155,9 @@ input[type=submit]:hover
 }
 
 
-#topnav
+.navbar
 {
 	background-color: #2F3336;
-	text-align: center;
 }
 
 
@@ -167,10 +165,10 @@ input[type=submit]:hover
 {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px;
 	font-size: 18px;
 	min-height: 38px;
 	line-height: 200%;
+	text-align: center;
 }
 
 .menu a
@@ -325,7 +323,6 @@ select:hover
 {
 	background-color: #990000;
 }
-
 
 
 .balance
