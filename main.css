@@ -2,7 +2,7 @@ body
 {
 	/*background image from www.pexels.com*/
 	
-	background: url("img/pexels-indra-gunawan-313032.jpg") no-repeat; 
+	background: url("img/pexels-indra-gunawan-313032.jpg") no-repeat fixed; 
 	background-size: cover;
 	margin: 0 auto;
 	color: #efefef;
@@ -204,7 +204,6 @@ input[type=submit]:hover
 	bottom: 0;
 }
 
-/*
 .footer
 {
 	clear: both;
@@ -213,12 +212,12 @@ input[type=submit]:hover
 	font-size: 13px;
 	color: #fff;
 	text-align: center;
-	padding: 15px 0px 5px 0px;
+	padding: 30px 0px 5px 0px;
 	letter-spacing: 2px;
-	position: relative;
+	position: absolute;
 	bottom: 0;
 }
-*/
+
 
 input[type=number],
 input[type=date],
@@ -242,14 +241,14 @@ select
 
 input[type=number]:hover,
 input[type=date]:hover,
-textarea:hover,
+textarea,
 select:hover
 {
 	background-color: #fff;
 }
 
 
-.form
+.form-group
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -421,8 +420,30 @@ table td
 			border-left-style: none;
 		}
 		
+		#information
+		{
+			position: relative;
+		}
+		
 		.description
 		{
+			background-color:  #2F3336;
+			opacity: 0.7;
 			color: #FFCC66;
+		}
+	
+}
+
+@media (max-width: 975px)
+{
+
+		#information
+		{
+			text: none;
+		}
+		
+		.footer
+		{
+			position: relative;
 		}
 }
