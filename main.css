@@ -91,18 +91,12 @@ h2
 	background-color: #339900;
 }
 
-/*
-.container
-{
-	margin-left: auto;
-	margin-right: auto;
-}*/
-
 
 input[type=text],
 input[type=email],
 input[type=password]
 {
+	display: block;
 	width: 400px;
 	background-color: #efefef;
 	color: #666;
@@ -113,7 +107,6 @@ input[type=password]
 	box-sizing: border-box; /*box sizing taki sam jak w przypadku przycisku Zaloguj, bo inaczej te pola z loginem i hasłem są szerze od przycisku Zaloguj */
 	outline: none;
 	margin-top: 20px;
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -135,7 +128,7 @@ input[type=submit]
 {
 	width: 400px;
 	background-color: #CC0000;
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 	padding: 15px 10px;
 	margin-top: 20px;
@@ -167,7 +160,7 @@ input[type=submit]:hover
 }
 
 
-.navbar-nav >li
+.navbar-nav > li
 {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -178,6 +171,11 @@ input[type=submit]:hover
 .navbar-nav  > li:first-child
 {
 	border-left: 1px dashed #FFCC66;
+}
+
+.nav-link
+{
+	color: #fff;
 }
 
 
@@ -206,7 +204,7 @@ input[type=submit]:hover
 	bottom: 0;
 }
 
-
+/*
 .footer
 {
 	clear: both;
@@ -220,7 +218,7 @@ input[type=submit]:hover
 	position: relative;
 	bottom: 0;
 }
-
+*/
 
 input[type=number],
 input[type=date],
@@ -392,8 +390,39 @@ table td
 #textMenu
 {
 	text-align: justify;
-	background-color: #fff;
-	color: #2F3336;
+	background-color:  #2F3336;
+	opacity: 0.7;
+	color: #fff;
 	padding: 35px;
+	letter-spacing: 2px;
+	line-height: 200%;
 }
 
+.blockquote
+{
+	color: #FFCC66;
+}
+
+.blockquote-footer
+{
+	color: #fff;
+}
+
+
+@media (max-width: 767px)
+{
+		.navbar-nav >li
+		{
+			border-right-style: none;
+		}
+		
+		.navbar-nav  > li:first-child
+		{
+			border-left-style: none;
+		}
+		
+		.description
+		{
+			color: #FFCC66;
+		}
+}
