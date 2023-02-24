@@ -22,113 +22,137 @@
 
 <body>
 
-	<main>
+	<header>
 	
-			<section>
+			<h1>Budżet Osobisty</h1>	
+		
+			<nav class = "navbar navbar-dark navbar-expand-md mb-4">
+				
+				<div class="container-fluid">
 			
-				<div class = "container">
-			
-					<header>
-						<h1>Budżet Osobisty</h1>	
-					</header>
+					<button class="navbar-toggler p-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Opcje menu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				
+					<div class="collapse navbar-collapse" id="mainmenu">
 					
-					<div class="row">
-					
-						<div class = "col-sm-6 col-md-4 mx-auto">
-					
-							<div class="balance"> 
-							
-								<div class="balanceOption"> 
-									<label for="period"> Bilans dla okresu: </label>
-										<select id="period" name="period">
-											<option value="01" selected> bieżący miesiąc</option>
-											<option value="02"> poprzedni miesiąc</option>
-											<option value="03"> bieżący rok</option>
-											<option value="04"> wybrany przedział czasowy</option>
-										</select>
-										
-									<div class="datesFromTo">
-										<label>  Data od: <input type="date" name="Date1" ></label>
-										<label>  Data do: <input type="date" name="Date2" ></label>	
-									</div>
-								</div>
+						<ul class="navbar-nav mx-auto">
+							<li class="nav-item"><a class="nav-link" href ="index.html"> Strona główna </a></li>
+							<li class="nav-item"><a class="nav-link" href ="incomes.html"> Dodaj przychód </a></li>
+							<li class="nav-item"><a class="nav-link" href ="expenses.html"> Dodaj wydatek </a></li>
+							<li class="nav-item"><a class="nav-link" href ="balance.html"> Przeglądaj bilans </a></li>
+							<li class="nav-item"><a class="nav-link" href ="#"> Ustawienia </a></li>
+							<li class="nav-item"><a class="nav-link" href ="#"> Wyloguj się </a></li>
+						</ul>
 						
+					</div>
+					
+				</div>
+				
+			</nav>
+			
+	</header>
+	
+	
+	<section>
+	
+		<div class = "container">
+			
+			<div class="row">
+			
+				<div class = "col-sm-6 col-md-4 mx-auto">
+			
+					<div class="balance"> 
+					
+						<div class="balanceOption"> 
+							<label for="period"> Bilans dla okresu: </label>
+								<select id="period" name="period">
+									<option value="01" selected> bieżący miesiąc</option>
+									<option value="02"> poprzedni miesiąc</option>
+									<option value="03"> bieżący rok</option>
+									<option value="04"> wybrany przedział czasowy</option>
+								</select>
 								
-								<div class="incomes"> 
-									<table>
-										<tr>
-											<td class ="tableHeader">Przychody</td>
-											<td class ="tableHeader">Kwota [zł]</td>
-										</tr>
-										<tr>
-											<td>Wynagrodzenie</td>
-											<td>3500,00</td>
-										</tr>
-										<tr>
-											<td>Odsetki bankowe</td>
-											<td>30,67</td>
-										</tr>
-										<tr>
-											<td>Sprzedaż na Allegro</td>
-											<td>123,45</td>
-										</tr>
-										<tr>
-											<td>Inne przychody</td>
-											<td>150,00</td>
-										</tr>
-										<tr>
-											<td class = "tableHeader">Suma przychodów:</td>
-											<td>4000,00</td>
-										</tr>
-									</table>
-									
-								</div>
-
-								<div class="expenses">
-									<table>
-											<tr>
-												<td class ="tableHeader">Wydatki</td>
-												<td class ="tableHeader">Kwota [zł]</td>
-											</tr>
-											<tr>
-												<td>Jedzenie</td>
-												<td>1200,00</td>
-											</tr>
-											<tr>
-												<td>Mieszkanie</td>
-												<td>740,00</td>
-											</tr>
-											<tr>
-												<td>Opieka zdrowotna</td>
-												<td>130,00</td>
-											</tr>
-											<tr>
-												<td>Inne wydatki</td>
-												<td>59,90</td>
-											</tr>
-											<tr>
-												<td class= "tableHeader">Suma wydatków:</td>
-												<td>2750,00</td>
-											</tr>
-									</table>
-									
-								</div>
-								
-								
-								<div id ="summary">Podsumowanie: 1250,00 zł</div>
-								<div id ="text">Gratulacje. Świetnie zarządzasz finansami!</div>
-								
+							<div class="datesFromTo">
+								<label>  Data od: <input type="date" name="Date1" min ="2010-01-01"></label>
+								<label>  Data do: <input type="date" name="Date2" min ="2010-01-01"></label>	
 							</div>
+						</div>
+				
+						
+						<div class="incomes-table"> 
+							<table>
+								<tr>
+									<td class ="tableHeader">Przychody</td>
+									<td class ="tableHeader">Kwota [zł]</td>
+								</tr>
+								<tr>
+									<td>Wynagrodzenie</td>
+									<td>3500,00</td>
+								</tr>
+								<tr>
+									<td>Odsetki bankowe</td>
+									<td>30,67</td>
+								</tr>
+								<tr>
+									<td>Sprzedaż na Allegro</td>
+									<td>123,45</td>
+								</tr>
+								<tr>
+									<td>Inne przychody</td>
+									<td>150,00</td>
+								</tr>
+								<tr>
+									<td class = "tableHeader">Suma przychodów:</td>
+									<td>4000,00</td>
+								</tr>
+							</table>
+							
+						</div>
+
+						<div class="expenses-table">
+							<table>
+									<tr>
+										<td class ="tableHeader">Wydatki</td>
+										<td class ="tableHeader">Kwota [zł]</td>
+									</tr>
+									<tr>
+										<td>Jedzenie</td>
+										<td>1200,00</td>
+									</tr>
+									<tr>
+										<td>Mieszkanie</td>
+										<td>740,00</td>
+									</tr>
+									<tr>
+										<td>Opieka zdrowotna</td>
+										<td>130,00</td>
+									</tr>
+									<tr>
+										<td>Inne wydatki</td>
+										<td>59,90</td>
+									</tr>
+									<tr>
+										<td class= "tableHeader">Suma wydatków:</td>
+										<td>2750,00</td>
+									</tr>
+							</table>
 							
 						</div>
 						
+						
+						<div id ="summary">Podsumowanie: 1250,00 zł</div>
+						<div id ="text">Gratulacje. Świetnie zarządzasz finansami!</div>
+						
 					</div>
-				
+					
 				</div>
+				
+			</div>
+		
+		</div>
 
-			</section>
-			
-	</main>
+	</section>
 		
 		
 	<footer>

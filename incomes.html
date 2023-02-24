@@ -22,66 +22,89 @@
 
 <body>
 
-	<main>
+	<header>
+	
+			<h1>Budżet Osobisty</h1>	
 		
-		<section>
+			<nav class = "navbar navbar-dark navbar-expand-md mb-4">
+				
+				<div class="container-fluid">
 			
-			<div class = "container">
-
-				<header>
-					<h1>Budżet Osobisty</h1>	
-				</header>
-		
-				<div class="row">
+					<button class="navbar-toggler p-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Opcje menu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 				
-					<div class = "col-sm-6 col-md-4 mx-auto">
-				
-						<form>
-						
-							<div class = "form-group mb-3">
-								<label for = "number"> Kwota </label>
-								<input type = "number" name="amount" step="0.01">
-							</div>
-							
-							<div class = "form-group mb-3">
-								<label for = "date"> Data </label>
-								<input type = "date" name="date">
-							</div>
-
-							<div class = "form-group mb-3">
-								<label for = "category"> Kategoria </label>
-							
-								<select id = "category" name = "category">	
-									<option value = "salary" selected> Wynagrodzenie </option>
-									<option value ="interest"> Odsetki bankowe </option>
-									<option value = "allegro"> Sprzedaż na Allegro </option>
-									<option value = "others"> Inne </option>
-								</select>
-							</div>
-							
-							<div class = "form-group mb-3">
-								<label> Komentarz  
-								<textarea class="comment" placeholder="Opis (opcjonalnie)" onfocus ="this.placeholder=''" onblur = "this.placeholder = 'Opis (opcjonalnie)'" cols="40" rows="2"></textarea>
-								</label>
-							</div>
-						
-							<div class = "button">
-								<button type = "submit" class= "add"> Dodaj </button>
-								<button type = "reset" class= "cancel"> Anuluj </button>
-							</div>
-						
-						</form>
+					<div class="collapse navbar-collapse" id="mainmenu">
+					
+						<ul class="navbar-nav mx-auto">
+							<li class="nav-item"><a class="nav-link" href ="index.html"> Strona główna </a></li>
+							<li class="nav-item"><a class="nav-link" href ="incomes.html"> Dodaj przychód </a></li>
+							<li class="nav-item"><a class="nav-link" href ="expenses.html"> Dodaj wydatek </a></li>
+							<li class="nav-item"><a class="nav-link" href ="balance.html"> Przeglądaj bilans </a></li>
+							<li class="nav-item"><a class="nav-link" href ="#"> Ustawienia </a></li>
+							<li class="nav-item"><a class="nav-link" href ="#"> Wyloguj się </a></li>
+						</ul>
 						
 					</div>
-						
-				</div>
 					
-			</div>
+				</div>
+				
+			</nav>
 			
-		</section>
+	</header>
 		
-	</main>
+		
+	<section>
 	
+		<div class="container">
+	
+			<div class="row">
+	
+				<div class="col-sm-6 col-md-4 mx-auto">
+	
+					<form>
+	
+						<div class="form-group mb-3">
+							<label for="number" class ="label"> Kwota </label>
+							<input type="number" name="amount" required step="0.01" min="0">
+						</div>
+	
+						<div class="form-group mb-3">
+							<label for="date" class ="label"> Data </label>
+							<input type="date" name="date" min="2010-01-01">
+						</div>
+	
+						<div class="form-group mb-3">
+							<label for="category" class ="label"> Kategoria </label>
+	
+							<select id="category" name="category">
+								<option value="salary" selected> Wynagrodzenie </option>
+								<option value="interest"> Odsetki bankowe </option>
+								<option value="allegro"> Sprzedaż na Allegro </option>
+								<option value="others"> Inne </option>
+							</select>
+						</div>
+	
+						<div class="form-group mb-3">
+							<label class ="label"> Komentarz </label>
+								<textarea class="comment" placeholder="Opis (opcjonalnie)" onfocus="this.placeholder=''"
+								onblur="this.placeholder = 'Opis (opcjonalnie)'" cols="40" rows="2"></textarea>
+						</div>
+	
+						<div class="finances-button">
+							<button type="submit" class="add"> Dodaj </button>
+							<button type="reset" class="cancel"> Anuluj </button>
+						</div>
+	
+					</form>
+	
+				</div>
+	
+			</div>
+	
+		</div>
+	
+	</section>
 	
 	<footer>
 	<div id ="information">

@@ -1,18 +1,17 @@
-/*Background Image*/
-body {
+body
+{
 	/*background image from www.pexels.com*/
-
-	background: url("img/pexels-indra-gunawan-313032.jpg") no-repeat fixed;
+	
+	background: url("img/pexels-indra-gunawan-313032.jpg") no-repeat fixed; 
 	background-size: cover;
 	margin: 0 auto;
 	color: #efefef;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
 }
 
-
-/*Headers*/
-h1 {
+h1
+{
 	font-size: 44px;
 	font-weight: 700;
 	color: #2F3336;
@@ -24,18 +23,18 @@ h1 {
 }
 
 
-h2 {
+h2
+{
 	font-weight: 700;
 	color: #2F3336;
 	letter-spacing: 5px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	margin-left: 105px;
+	margin-left: 100px;
 }
 
-
-/*Main page - about App*/
-.description {
+.description
+{
 	list-style-type: none;
 	margin-left: 30px;
 	color: #2F3336;
@@ -45,10 +44,8 @@ h2 {
 	line-height: 300%;
 }
 
-
-/*Main page - buttons*/
-.registration,
-.login {
+.registration
+{
 	width: 200px;
 	background-color: #2F3336;
 	font-size: 20px;
@@ -65,32 +62,40 @@ h2 {
 }
 
 
-.registration:hover {
+.registration:hover
+{
 	background-color: #CC0000;
 }
 
-.login:hover {
+
+.login
+{
+	width: 200px;
+	background-color: #2F3336;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	margin-left: 100px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	display: inline-block;
+}
+
+
+.login:hover
+{
 	background-color: #339900;
 }
 
 
-/*Forms - all websites*/
-.form-group {
-	margin-left: auto;
-	margin-right: auto;
-	width: 400px;
-	color: #2F3336;
-	margin-top: 10px;
-	margin-bottom: 2px;
-	font-size: 16px;
-	font-weight: 600;
-}
-
-
-/*Login and registration - forms*/
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password]
+{
 	display: block;
 	width: 400px;
 	background-color: #efefef;
@@ -99,52 +104,33 @@ input[type=password] {
 	border-radius: 5px;
 	font-size: 20px;
 	padding: 10px;
-	box-sizing: border-box;
-	/*box sizing taki sam jak w przypadku przycisku Zaloguj, bo inaczej te pola z loginem i hasłem są szerze od przycisku Zaloguj */
+	box-sizing: border-box; /*box sizing taki sam jak w przypadku przycisku Zaloguj, bo inaczej te pola z loginem i hasłem są szerze od przycisku Zaloguj */
 	outline: none;
 	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 input[type=text]:focus,
 input[type=email]:focus,
-input[type=password]:focus {
-	-webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
-	-moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
-	box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9); 
 	border: 2px solid #CC9966;
 	background-color: #fff;
 	color: #CC6600;
 }
 
-/* Menu website*/
-#textMenu {
-	text-align: justify;
-	background-color: #2F3336;
-	opacity: 0.7;
-	color: #fff;
-	padding: 35px;
-	letter-spacing: 2px;
-	line-height: 200%;
-}
-
-.blockquote {
-	color: #FFCC66;
-}
-
-.blockquote-footer {
-	color: #fff;
-}
-
-
-
-/*Login and registration - buttons*/
-.login-button,
-.register-button {
+input[type=submit]
+{
 	width: 400px;
+	background-color: #CC0000;
 	font-size: 18px;
 	color: white;
-	padding: 15px;
+	padding: 15px 10px;
 	margin-top: 20px;
 	border: none;
 	border-radius: 5px;
@@ -152,62 +138,60 @@ input[type=password]:focus {
 	letter-spacing: 2px;
 	outline: none;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.login-button {
-	background-color: #339900;
-	;
-}
-
-.login-button:hover {
-	background-color: #006600;
-}
-
-.register-button {
-	background-color: #CC0000;
-}
-
-.register-button:hover {
+input[type=submit]:hover
+{
 	background-color: #990000;
 }
 
-/*Navbar*/
-.navbar {
+
+.navbar
+{
 	background-color: #2F3336;
 }
 
 
-.navbar-nav {
+.navbar-nav
+{
 	font-size: 18px;
 }
 
 
-.navbar-nav>li {
+.navbar-nav > li
+{
 	padding-left: 15px;
 	padding-right: 15px;
 	border-right: 1px dashed #FFCC66;
 }
 
 
-.navbar-nav>li:first-child {
+.navbar-nav  > li:first-child
+{
 	border-left: 1px dashed #FFCC66;
 }
 
-.nav-link {
+.nav-link
+{
 	color: #fff;
 }
 
 
-.navbar-nav a:hover {
+.navbar-nav a:hover
+{
 	color: #FFCC66;
 }
 
-.navbar-toggler {
+.navbar-toggler
+{
 	margin-left: 20px;
 }
 
-/*Footer*/
-#information {
+
+#information
+{
 	clear: both;
 	width: 100%;
 	height: 28px;
@@ -220,7 +204,8 @@ input[type=password]:focus {
 	bottom: 0;
 }
 
-.footer {
+.footer
+{
 	clear: both;
 	width: 100%;
 	height: 28px;
@@ -229,56 +214,65 @@ input[type=password]:focus {
 	text-align: center;
 	padding: 30px 0px 5px 0px;
 	letter-spacing: 2px;
-	position: relative;
+	position: absolute;
 	bottom: 0;
 }
 
 
-/*Incomes, Expenses - forms*/
 input[type=number],
 input[type=date],
 textarea,
-select {
+select
+{
 	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
 	background-color: #efefef;
 	color: #666;
-	font-size: 16px;
 	border: 2px solid #ddd;
 	border-radius: 5px;
+	font-size: 16px;
 	padding: 7px;
-	box-sizing: border-box;
-	/*box sizing taki sam jak w przypadku przycisków, bo inaczej pola formularzy są szersze */
+	box-sizing: border-box; /*box sizing taki sam jak w przypadku przycisków, bo inaczej pola formularzy są szersze */
 	outline: none;
 	display: block;
-	resize: none;
-	/* resize: vertical; - możliwa zmiana rozmiaru tylko w pionie */
+	margin-left: auto;
+	margin-right: auto;
+	resize: none; /* resize: vertical; - możliwa zmiana rozmiaru tylko w pionie */
 }
 
 input[type=number]:hover,
 input[type=date]:hover,
 textarea,
-select:hover {
+select:hover
+{
 	background-color: #fff;
 }
 
-.label {
-	padding-left: 50px;
+
+.form-group
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	color: #2F3336;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 
-/*Incomes, Expenses - buttons*/
-.finances-button {
+.button
+{
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
 }
 
 
-.add,
-.cancel {
+.add
+{
 	width: 145px;
+	background-color: #339900;
 	font-size: 16px;
 	color: white;
 	padding: 12px 10px;
@@ -292,27 +286,38 @@ select:hover {
 	font-weight: 600;
 }
 
-.add {
-	background-color: #339900;
-}
-
-.add:hover {
+.add:hover
+{
 	background-color: #006600;
 }
 
 
-.cancel {
+.cancel
+{
+	width: 145px;
 	background-color: #CC0000;
+	font-size: 16px;
+	color: white;
+	margin-top: 20px;
 	margin-left: 5px;
+	padding: 12px 10px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	display: inline-block;
+	font-weight: 600;
 }
 
-.cancel:hover {
+.cancel:hover
+{
 	background-color: #990000;
 }
 
 
-/*Balance - forms*/
-.balance {
+.balance
+{
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
@@ -323,8 +328,9 @@ select:hover {
 	font-weight: 600;
 }
 
-/*Balance - tables*/
-table {
+
+table
+{
 	border-collapse: collapse;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -333,18 +339,21 @@ table {
 }
 
 
-table td {
+table td
+{
 	border: 2px solid #ddd;
 	padding: 5px;
 	font-size: 16px;
 }
 
-.tableHeader {
+.tableHeader
+{
 	font-weight: 600;
 }
 
 
-.incomes-table {
+.incomes
+{
 	float: left;
 	width: 300px;
 	font-size: 16px;
@@ -354,7 +363,8 @@ table td {
 }
 
 
-.expenses-table {
+.expenses
+{
 	float: left;
 	width: 300px;
 	font-size: 16px;
@@ -364,47 +374,76 @@ table td {
 	margin-bottom: 20px;
 }
 
-/*Balance - summary*/
-#summary {
+#summary
+{
 	color: #fff;
 	text-align: center;
 }
 
-#text {
+#text
+{
 	color: #339900;
 	text-align: center;
 }
 
-
-/* @media */
-@media (max-width: 767px) {
-	.navbar-nav>li {
-		border-right-style: none;
-	}
-
-	.navbar-nav>li:first-child {
-		border-left-style: none;
-	}
-
-	#information {
-		position: relative;
-	}
-
-	.description {
-		background-color: #2F3336;
-		opacity: 0.7;
-		color: #FFCC66;
-	}
-
+#textMenu
+{
+	text-align: justify;
+	background-color:  #2F3336;
+	opacity: 0.7;
+	color: #fff;
+	padding: 35px;
+	letter-spacing: 2px;
+	line-height: 200%;
 }
 
-@media (max-width: 975px) {
+.blockquote
+{
+	color: #FFCC66;
+}
 
-	#information {
-		text: none;
-	}
+.blockquote-footer
+{
+	color: #fff;
+}
 
-	.footer {
-		position: relative;
-	}
+
+@media (max-width: 767px)
+{
+		.navbar-nav >li
+		{
+			border-right-style: none;
+		}
+		
+		.navbar-nav  > li:first-child
+		{
+			border-left-style: none;
+		}
+		
+		#information
+		{
+			position: relative;
+		}
+		
+		.description
+		{
+			background-color:  #2F3336;
+			opacity: 0.7;
+			color: #FFCC66;
+		}
+	
+}
+
+@media (max-width: 975px)
+{
+
+		#information
+		{
+			text: none;
+		}
+		
+		.footer
+		{
+			position: relative;
+		}
 }
